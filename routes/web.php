@@ -21,4 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/checkout', [App\Http\Controllers\CheckoutController::class, 'checkout'])->name('checkout');
+Route::post('/checkout', [App\Http\Controllers\CheckoutController::class, 'index'])->name('checkout');
+
